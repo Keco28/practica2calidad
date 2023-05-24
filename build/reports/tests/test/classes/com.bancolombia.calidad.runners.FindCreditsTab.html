@@ -86,27 +86,9 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/find_credits_tab.feature:9 ?[0m# Ingresar a la seccion de creditos y simular uno
-
-1 Scenarios (?[31m1 failed?[0m)
-3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
-0m18.957s
-
-java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div[2]/div/div[2]/div/div[2]/section/div[3]/div[2]/app-root/div/app-resultado-simulacion/section[1]/swiper/div/div[1]/div[2]/div/div[3]/small&quot;}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-C9EG4CM', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59701}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56348503ec23c0afb342c62bf5b11396
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[2]/div/div[2]/div/div[2]/section/div[3]/div[2]/app-root/div/app-resultado-simulacion/section[1]/swiper/div/div[1]/div[2]/div/div[3]/small}
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at com.bancolombia.calidad.stepdefinitions.FindCreditsTabStepDefinitions.verSimulacion(FindCreditsTabStepDefinitions.java:44)
-	at ?.puedo ver las opciones de pago segun la informacion ingresada(src/test/resources/features/find_credits_tab.feature:12)
+1 Scenarios (?[32m1 passed?[0m)
+3 Steps (?[32m3 passed?[0m)
+0m17.877s
 
 </pre>
 </span>
@@ -142,124 +124,6 @@ Session ID: 56348503ec23c0afb342c62bf5b11396
 
 TEST STARTED: Ingresar a la seccion de creditos y simular uno
 -------------------------------------------------------------------(simular-credito;ingresar-a-la-seccion-de-creditos-y-simular-uno)
-java.lang.NullPointerException
-	at net.thucydides.core.requirements.model.cucumber.CucumberParser.loadFeature(CucumberParser.java:79)
-	at net.thucydides.core.requirements.model.cucumber.CucumberParser.loadFeatureNarrative(CucumberParser.java:134)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.loadFromFeatureFile(FileSystemRequirementsTagProvider.java:649)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.readRequirementsFromStoryOrFeatureFile(FileSystemRequirementsTagProvider.java:602)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.capabilitiesAndStoriesIn(FileSystemRequirementsTagProvider.java:196)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1603)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.getRequirements(FileSystemRequirementsTagProvider.java:177)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.requirementWithMatchingFeatureFile(FileSystemRequirementsTagProvider.java:253)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.getTagsFor(FileSystemRequirementsTagProvider.java:225)
-	at net.thucydides.core.model.TestOutcome.getTagsUsingTagProviders(TestOutcome.java:1877)
-	at net.thucydides.core.model.TestOutcome.getTags(TestOutcome.java:1854)
-	at net.thucydides.core.model.TestOutcome.addTags(TestOutcome.java:1907)
-	at net.thucydides.core.steps.StepEventBus.addTagsToCurrentTest(StepEventBus.java:645)
-	at cucumber.runtime.formatter.SerenityReporter.startScenario(SerenityReporter.java:635)
-	at cucumber.runtime.formatter.SerenityReporter.startOfScenarioLifeCycle(SerenityReporter.java:626)
-	at cucumber.runtime.formatter.SerenityReporter.handleTestCaseStarted(SerenityReporter.java:254)
-	at cucumber.runtime.formatter.SerenityReporter.lambda$new$1(SerenityReporter.java:127)
-	at cucumber.runner.EventBus.send(EventBus.java:28)
-	at cucumber.api.TestCase.run(TestCase.java:55)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-java.lang.NullPointerException
-	at net.thucydides.core.requirements.model.cucumber.CucumberParser.loadFeature(CucumberParser.java:79)
-	at net.thucydides.core.requirements.model.cucumber.CucumberParser.loadFeatureNarrative(CucumberParser.java:134)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.loadFromFeatureFile(FileSystemRequirementsTagProvider.java:649)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.readRequirementsFromStoryOrFeatureFile(FileSystemRequirementsTagProvider.java:602)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.capabilitiesAndStoriesIn(FileSystemRequirementsTagProvider.java:196)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1603)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at net.thucydides.core.requirements.FileSystemRequirementsTagProvider.getRequirements(FileSystemRequirementsTagProvider.java:177)
-	at net.thucydides.core.requirements.RequirementsProvided.by(RequirementsProvided.java:15)
-	at net.thucydides.core.requirements.MultiSourceRequirementsService.getRequirements(MultiSourceRequirementsService.java:40)
-	at net.thucydides.core.requirements.BaseRequirementsService.getRequirementTypes(BaseRequirementsService.java:197)
-	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addTestOutcomeToContext(HtmlAcceptanceTestReporter.java:163)
-	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:107)
-	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:239)
-	at net.thucydides.core.reports.ReportService.lambda$generateReportsFor$0(ReportService.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
 </pre>
 </span>
 </div>
@@ -271,7 +135,7 @@ java.lang.NullPointerException
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at May 22, 2023, 5:26:35 PM</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at May 23, 2023, 8:27:15 PM</p>
 </div>
 </div>
 </body>

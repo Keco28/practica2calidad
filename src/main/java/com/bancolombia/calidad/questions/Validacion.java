@@ -10,11 +10,12 @@ public class Validacion implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
+        boolean esta = false;
         String stringTemporal = Text.of(TEXTO_VALIDACION).viewedBy(actor).asString();
         if (stringTemporal.contains("cuotas mensuales")){
-            return true;
+            esta =  true;
         }
-        return false;
+        return esta;
     }
 
     public static Validacion finSimulacion(){

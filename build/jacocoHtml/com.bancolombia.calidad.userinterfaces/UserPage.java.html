@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserPage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">simulacionCalidad</a> &gt; <a href="index.source.html" class="el_package">com.bancolombia.calidad.userinterfaces</a> &gt; <span class="el_source">UserPage.java</span></div><h1>UserPage.java</h1><pre class="source lang-java linenums">package com.bancolombia.calidad.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.screenplay.targets.Target;
+
+<span class="fc" id="L7">public class UserPage extends PageObject {</span>
+
+<span class="fc" id="L9">    public static final Target OPCION_CREDITOS = Target.the(&quot;VER CREDITOS&quot;).locatedBy(&quot;/html/body/div[2]/div[2]/div/div[2]/div/div[7]/section/div[3]/section/div/div[2]/div[1]/div/div[2]/span/a&quot;);</span>
+<span class="fc" id="L10">    public static final Target CERRAR_POPUP = Target.the(&quot;CERRAR POPUP&quot;).locatedBy(&quot;/html/body/div[2]/div[2]/div/div[2]/div/div[9]/section/div[3]/div[2]/section/div/div[1]/button&quot;);</span>
+<span class="fc" id="L11">    public static final Target OPCION_IR_SIMULAR = Target.the(&quot;OPCION IR SIMULAR&quot;).locatedBy(&quot;/html/body/div[2]/div[2]/div/div[2]/div/div[6]/section/div[3]/section/div/div[1]/div[4]/div/div[2]/div/a[1]&quot;);</span>
+<span class="fc" id="L12">    public static final Target OPCION_CONTINUAR = Target.the(&quot;OPCION CONTINUAR&quot;).located(By.id(&quot;boton-seleccion-tarjeta&quot;));</span>
+<span class="fc" id="L13">    public static final Target OPCION_SI = Target.the(&quot;OPCION SI&quot;).locatedBy(&quot;/html/body/div[2]/div[2]/div/div[2]/div/div[2]/section/div[3]/div[2]/app-root/div/app-solicitud-monto/section/form/mat-radio-group/mat-radio-button[1]&quot;);</span>
+<span class="fc" id="L14">    public static final Target INPUT_MONTO = Target.the(&quot;INPUT MONTO&quot;).located(By.id(&quot;valor-simulacion&quot;));</span>
+<span class="fc" id="L15">    public static final Target INPUT_CUOTAS = Target.the(&quot;INPUT CUOTAS&quot;).located(By.id(&quot;valor-plazo&quot;));</span>
+<span class="fc" id="L16">    public static final Target OPCION_FECHA = Target.the(&quot;OPCION FECHA&quot;).located(By.id(&quot;campo-fecha&quot;));</span>
+<span class="fc" id="L17">    public static final Target OPCION_YEAR = Target.the(&quot;OPCION YEAR&quot;).locatedBy(&quot;/html/body/div[6]/div[2]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-multi-year-view/table/tbody/tr[5]/td[3]/div[1]&quot;);</span>
+<span class="fc" id="L18">    public static final Target OPCION_MONTH = Target.the(&quot;OPCION MONTH&quot;).locatedBy(&quot;/html/body/div[6]/div[2]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-year-view/table/tbody/tr[2]/td[3]/div[1]&quot;);</span>
+<span class="fc" id="L19">    public static final Target OPCION_DAY = Target.the(&quot;OPCION DAY&quot;).locatedBy(&quot;/html/body/div[6]/div[2]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-month-view/table/tbody/tr[5]/td[3]/div[1]&quot;);</span>
+<span class="fc" id="L20">    public static final Target OPCION_SIMULAR = Target.the(&quot;OPCION SIMULAR&quot;).located(By.id(&quot;boton-simular&quot;));</span>
+<span class="fc" id="L21">    public static final Target TEXTO_VALIDACION = Target.the(&quot;TEXTO VALIDACION&quot;).locatedBy(&quot;/html/body/div[2]/div[2]/div/div[2]/div/div[2]/section/div[3]/div[2]/app-root/div/app-resultado-simulacion/section[1]/swiper/div/div[1]/div[2]/div/div[3]/small&quot;);</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

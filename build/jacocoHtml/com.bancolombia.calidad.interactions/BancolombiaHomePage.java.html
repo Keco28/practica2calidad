@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BancolombiaHomePage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">simulacionCalidad</a> &gt; <a href="index.source.html" class="el_package">com.bancolombia.calidad.interactions</a> &gt; <span class="el_source">BancolombiaHomePage.java</span></div><h1>BancolombiaHomePage.java</h1><pre class="source lang-java linenums">package com.bancolombia.calidad.interactions;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+
+import java.util.Random;
+
+import static com.bancolombia.calidad.userinterfaces.UserPage.*;
+
+<span class="fc" id="L13">public class BancolombiaHomePage implements Interaction {</span>
+
+<span class="fc" id="L15">    Random random = new Random();</span>
+<span class="fc" id="L16">    String monto = Integer.toString(random.nextInt(499000000) + 1000000);</span>
+<span class="fc" id="L17">    String cuotas = Integer.toString(random.nextInt(36) + 48);</span>
+
+
+    @Override
+    public &lt;T extends Actor&gt; void performAs(T actor) {
+
+<span class="fc" id="L23">        actor.attemptsTo(Click.on(CERRAR_POPUP));</span>
+<span class="fc" id="L24">        actor.attemptsTo(Click.on(OPCION_CREDITOS));</span>
+<span class="fc" id="L25">        actor.attemptsTo(Click.on(OPCION_IR_SIMULAR));</span>
+<span class="fc" id="L26">        actor.attemptsTo(Click.on(OPCION_CONTINUAR));</span>
+<span class="fc" id="L27">        actor.attemptsTo(Click.on(OPCION_SI));</span>
+<span class="fc" id="L28">        actor.attemptsTo(Enter.theValue(monto).into(INPUT_MONTO));</span>
+<span class="fc" id="L29">        actor.attemptsTo(Enter.theValue(cuotas).into(INPUT_CUOTAS));</span>
+<span class="fc" id="L30">        actor.attemptsTo(Click.on(OPCION_FECHA));</span>
+<span class="fc" id="L31">        actor.attemptsTo(Click.on(OPCION_YEAR));</span>
+<span class="fc" id="L32">        actor.attemptsTo(Click.on(OPCION_MONTH));</span>
+<span class="fc" id="L33">        actor.attemptsTo(Click.on(OPCION_DAY));</span>
+<span class="fc" id="L34">        actor.attemptsTo(Click.on(OPCION_SIMULAR));</span>
+<span class="fc" id="L35">    }</span>
+
+    public static BancolombiaHomePage go(){
+
+<span class="fc" id="L39">        return Tasks.instrumented(BancolombiaHomePage.class);</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

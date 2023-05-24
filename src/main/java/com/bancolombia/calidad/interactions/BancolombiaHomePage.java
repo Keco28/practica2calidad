@@ -20,17 +20,24 @@ public class BancolombiaHomePage implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
+        //pagina inicial
         actor.attemptsTo(Click.on(CERRAR_POPUP));
         actor.attemptsTo(Click.on(OPCION_CREDITOS));
+
+        //acceder al simulador
         actor.attemptsTo(Click.on(OPCION_IR_SIMULAR));
         actor.attemptsTo(Click.on(OPCION_CONTINUAR));
         actor.attemptsTo(Click.on(OPCION_SI));
+
+        //ingreso info
         actor.attemptsTo(Enter.theValue(monto).into(INPUT_MONTO));
         actor.attemptsTo(Enter.theValue(cuotas).into(INPUT_CUOTAS));
         actor.attemptsTo(Click.on(OPCION_FECHA));
         actor.attemptsTo(Click.on(OPCION_YEAR));
         actor.attemptsTo(Click.on(OPCION_MONTH));
         actor.attemptsTo(Click.on(OPCION_DAY));
+
+        //simular
         actor.attemptsTo(Click.on(OPCION_SIMULAR));
     }
 

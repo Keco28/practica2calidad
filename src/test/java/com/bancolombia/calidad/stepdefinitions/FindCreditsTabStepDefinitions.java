@@ -3,8 +3,6 @@ package com.bancolombia.calidad.stepdefinitions;
 import com.bancolombia.calidad.questions.Validacion;
 import com.bancolombia.calidad.tasks.OpenThe;
 import com.bancolombia.calidad.userinterfaces.UserPage;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -26,7 +24,6 @@ public class FindCreditsTabStepDefinitions {
     private final Actor personaNatural = Actor.named("keco");
 
 
-
     @Given("que estoy en la pagina principal de la sucursal virtual personas de bancolombia")
     public void pagPrincipal(){
         driver.manage().window().maximize();
@@ -35,7 +32,6 @@ public class FindCreditsTabStepDefinitions {
 
     @When("accedo a la ventana de simulacion de creditos e ingreso la informacion necesaria")
     public void accederYSimularCredito(){
-
         personaNatural.attemptsTo(OpenThe.Browser(new UserPage()));
     }
 
