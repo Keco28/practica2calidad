@@ -2,6 +2,7 @@ buildscript {
     repositories {
         mavenCentral()
         mavenLocal()
+        jcenter()
     }
     dependencies {
         classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.9")
@@ -11,6 +12,15 @@ buildscript {
 plugins {
     id 'java'
     id 'idea'
+    id 'jacoco'
+}
+
+tasks.jacocoTestReport {
+    reports {
+        xml.required = false
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
 }
 
 group 'org.example'
