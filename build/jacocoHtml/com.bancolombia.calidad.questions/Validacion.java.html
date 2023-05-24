@@ -11,11 +11,11 @@ import static com.bancolombia.calidad.userinterfaces.UserPage.TEXTO_VALIDACION;
     @Override
     public Boolean answeredBy(Actor actor) {
 <span class="fc" id="L13">        boolean esta = false;</span>
-<span class="fc" id="L14">        String stringTemporal = Text.of(TEXTO_VALIDACION).viewedBy(actor).asString();</span>
-<span class="pc bpc" id="L15" title="1 of 2 branches missed.">        if (stringTemporal.contains(&quot;cuotas mensuales&quot;)){</span>
-<span class="fc" id="L16">            esta =  true;</span>
+<span class="nc" id="L14">        String stringTemporal = Text.of(TEXTO_VALIDACION).viewedBy(actor).asString();</span>
+<span class="nc bnc" id="L15" title="All 2 branches missed.">        if (stringTemporal.contains(&quot;cuotas mensuales&quot;)){</span>
+<span class="nc" id="L16">            esta =  true;</span>
         }
-<span class="fc" id="L18">        return esta;</span>
+<span class="nc" id="L18">        return esta;</span>
     }
 
     public static Validacion finSimulacion(){
